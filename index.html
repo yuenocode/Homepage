@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+  <link rel="stylesheet" href="stylesheet.css">
+    </head>
+    <title>my new webpage</title>
+    <script>
+        function greet()
+        {
+            let name = document.querySelector('#name').value;
+            if (name === '')
+            {
+                name = 'world';
+            }
+            document.querySelector('#result').innerHTML = 'Hello, ' + name + '!';
+        }
+    </script>
+  <body>
+    <div class="form">
+      <form onsubmit="greet(); return false;">
+          <input type="text" id="name" placeholder="Name">
+          <input type="submit">
+      </form>
+    </div>
+    <div id="result">
+        Hello!
+    </div>
+    <h1>Oli Yuen</h1>
+    <p>this is my first webpage.</p>
+    <p>I am learning how to code.</p>
+    <h1>Test</h1>
+    <img src="myimageforwebsitetest.jpg" alt="image not found" width="400px">
+    <p>it seems pretty cool so far.</p>
+    <p>i hope one day i can make a game.</p>
+    <a href="https://www.gmas.wa.edu.au/dashboards/ssstudent_dash.html">School Website</a>
+  </body>
+</html>
